@@ -1,1 +1,64 @@
-<h1> Hello world </h1>
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+		<body onpageshow="myFunction()"></body>
+		
+		</body> 
+		<img src="dip.gif" alt="sonar" width="300" height="300">
+	<title>Check your current IP</title> 
+	<style> 
+		p, h1 { 
+			color:greenyellow; 
+			position:relative;
+			bottom:300px;
+		} 
+
+		h3 {color:greenyellow;
+
+		}
+		body {
+background-color: black;
+background-
+
+
+		}
+		img {
+	position: relative;
+	bottom:-175px;
+	right:-527px;
+		}
+	
+	</style> 
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+	</script> 
+
+	<script> 
+
+
+		$.getJSON("https://api.ipify.org?format=json", 
+										function(data) { 
+
+			
+			$("#gfg").html(data.ip); 
+		}) 
+	</script> 
+
+
+</head> 
+
+<body> 
+
+	
+	
+	<center> 
+		<h1>Your current IP address</h1> 
+		
+
+		<p id="gfg"></p> 
+
+	</center> 
+</body> 
+
+</html> 
